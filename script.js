@@ -14,10 +14,11 @@ const addSegitiga = () => {
   let words = '0';
 
   for (let i = 0; i < rows; i++) {
+    hasil.innerHTML += realDigits[i];
     for (let j = 0; j <= i; j++) {
       hasil.innerHTML += words;
     }
-    hasil.innerHTML += realDigits[i] + '<br/>';
+    hasil.innerHTML += '<br>';
   }
 };
 
@@ -31,10 +32,11 @@ const addGanjil = () => {
   let words = '0';
 
   for (let i = 0; i < rows; i++) {
+    hasil.innerHTML += realDigits[i] + i;
     for (let j = 0; j <= i; j++) {
       hasil.innerHTML += words;
     }
-    hasil.innerHTML += realDigits[i] + i + '<br/>';
+    hasil.innerHTML += '<br/>';
   }
 };
 
@@ -48,10 +50,11 @@ const addPrima = () => {
   let words = '0';
 
   for (let i = 0; i < rows; i++) {
+    hasil.innerHTML += realDigits[i] + i;
     for (let j = 0; j <= i; j++) {
       hasil.innerHTML += words;
     }
-    hasil.innerHTML += realDigits[i] + '<br/>';
+    hasil.innerHTML += '<br/>';
   }
 };
 
