@@ -50,7 +50,7 @@ const addPrima = () => {
   let words = '0';
 
   for (let i = 0; i < rows; i++) {
-    hasil.innerHTML += realDigits[i] + i;
+    hasil.innerHTML += realDigits[i] - 1 + i;
     for (let j = 0; j <= i; j++) {
       hasil.innerHTML += words;
     }
