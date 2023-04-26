@@ -15,9 +15,9 @@ const addSegitiga = () => {
 
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j <= i; j++) {
-      hasil.innerHTML += realDigits[i] + words;
+      hasil.innerHTML += words;
     }
-    hasil.innerHTML += '<br/>';
+    hasil.innerHTML += realDigits[i] + '<br/>';
   }
 };
 
@@ -32,9 +32,9 @@ const addGanjil = () => {
 
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j <= i; j++) {
-      hasil.innerHTML += realDigits[i] + i + words;
+      hasil.innerHTML += words;
     }
-    hasil.innerHTML += '<br/>';
+    hasil.innerHTML += realDigits[i] + i + '<br/>';
   }
 };
 
@@ -45,12 +45,13 @@ const addPrima = () => {
 
   console.log(realDigits);
   let rows = realDigits.length;
+  let words = '0';
 
   for (let i = 0; i < rows; i++) {
     for (let j = 0; j <= i; j++) {
-      hasil.innerHTML += realDigits[i] - i + 1;
+      hasil.innerHTML += words;
     }
-    hasil.innerHTML += '<br/>';
+    hasil.innerHTML += realDigits[i] + '<br/>';
   }
 };
 
