@@ -31,7 +31,7 @@ const addGanjil = () => {
   let rows = realDigits.length;
   let words = '0';
 
-  for (let i = 0; i < rows; i++) {
+  for (let i = 1; i < rows; i++) {
     hasil.innerHTML += realDigits[i] + i;
     for (let j = 0; j <= i; j++) {
       hasil.innerHTML += words;
@@ -46,10 +46,10 @@ const addPrima = () => {
   const realDigits = digits.map(Number);
 
   console.log(realDigits);
-  let rows = realDigits.length;
+  let rows = realDigits.length - 1;
   let words = '0';
 
-  for (let i = 0; i < rows; i++) {
+  for (let i = 1; i < rows; i++) {
     hasil.innerHTML += realDigits[i] - 1 + i;
     for (let j = 0; j <= i; j++) {
       hasil.innerHTML += words;
